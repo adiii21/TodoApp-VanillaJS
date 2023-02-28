@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    /* background: rgb(249, 220, 185); */
+    background-image: url("https://www.transparenttextures.com/patterns/vertical-cloth.png");
+    /* background:linear-gradient(90deg ,#0680b0,#17d9c9,#02907f ); */
+    font-family: Poppins, sans-serif
+}
+
+.container{
+    margin: 0 auto;
+    text-align: center;
+    width: 70%;
+    max-width: 600px;
+    padding: 60px 0;
+    color: rgb(92, 33, 33);
+}
+
+#line{
+    width: 30px;
+    height: 2px;
+    background-color: #08643f;
+    margin: 0 auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.flex-button{
+    display: inline;
+    width: 100%;
+}
+
+input{
+    border: none;
+}
+
+input[type='text']{
+    width: 70%;
+    padding: 5px 10px;
+    outline: none;
+    font-size: 1.2rem;
+    margin-right: -4px;
+    color: black;
+    background-color: rgba(255, 255, 255, 0.868);
+    cursor: pointer;
+}
+
+input[type='text']:disabled{
+    cursor: default;
+    color: rgb(255, 239, 239);
+    background-color: rgba(99, 87, 84, 0.652);
+}
+
+input[type='button']{
+    padding: 5px;
+    font-size: 1.04rem;
+    color: white;
+    margin: 0 -3px;
+}
+
+#add-btn{
+    margin: -4px;
+    background-color: #01605c;
+}
+
+#del-btn{
+    background-color: rgb(125, 38, 38);
+}
+
+input[type='button']:active{
+    transform: scale(.94);
+}
+
+.new-tasks{
+    margin: 25px 0;
+    
+}
+.update-task{
+    margin-left: 10px;
+    background-color: #01605c;
+}
+.rename-task{
+    margin:0 2px;
+    background-color: rgb(189, 130, 54);
+}
+.del-task{
+background-color: rgb(125, 38, 38);
+}
+
+.task{
+    width: 92%;
+    margin: 10px auto;
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (max-width:450px){
+    .task{
+        display: inline;
+    }
+    .flex-button{
+        display: block;
+        width: 100%;
+    }
+}
